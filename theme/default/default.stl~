@@ -25,11 +25,10 @@ Header\header_inactive_pix=header_inactive.png
 Header\title_color=@Variant(\0\0\0\x43\x1\xff\xff\xff\xff\xff\xff\xff\xff\0\0)
 Header\minmax_pix=minmax.png
 Header\close_pix=close.png
-Header\kill_pix=kill.png
 Header\minimalize_pix=minimalize.png
 
 [Desktop]
-wall_pix=lotto.png
+wall_pix=windows-7-wallpaper.jpg
 
 [Dockbar]
 dock_pix=header_active.png

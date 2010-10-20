@@ -31,21 +31,24 @@ DOWNLOAD
 *************
 INSTALLATION
 *************
-To compile, enter in "Antico" dir (where is the antico.pro) and type on shell:
+unpack archive to $HOME/antico
+
+To compile, enter in "Antico " dir (where is the antico.pro) and type on shell:
+
 "qmake" (or qmake-qt4)
 "make"
----------------------------------------------------
-To install, type on shell (as root):
-"sh install"
+"make install"
+
+ATTENTION : don't remove $HOME/antico folder !!!!
+
 ---------------------------------------------------
 To run the window manager:
 - from KDM/GMD, select "Antico" from WM list
 - from shell, type "xinit /path/to/antico/bin" (first "pkill" kdm/gdm and X)
 ---------------------------------------------------
-To uninstall, type on shell (as root):
-"sh uninstall"
+
 ---------------------------------------------------
-To init the WM, just delete the "antico.cfg".
+To init the WM, just delete the "$HOME/antico/antico.cfg".
 
 ************
 DEVELOPMENT
@@ -54,6 +57,10 @@ To test the window manager, type on shell:
 
 DISPLAY=:0
 Xephyr :1 -ac -screen 1024x768 & DISPLAY=:1; $HOME/antico/antico
+
+OR 
+
+Xnest -ac :20 -nolisten tcp & DISPLAY=:20 $HOME/antico/antico
 
 (where 1024x768 is your preferred screen size and $HOME if you have download Antico in user home)
 ---------------------------------------------------
